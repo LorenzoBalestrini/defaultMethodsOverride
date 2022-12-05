@@ -16,14 +16,14 @@ public class Test {
 
         System.out.println("---------------");
 
-        System.out.println(onePlus.equals(iPhone));
+        System.out.println("Are these smartphones equals? " + onePlus.equals(iPhone));
 
         System.out.println("---------------");
 
         try{
             Smartphone clonediPhone = iPhone.clone();
             clonediPhone.toString();
-            System.out.println(clonediPhone.equals(iPhone));
+            System.out.println("Are these smartphones equals? " + clonediPhone.equals(iPhone));
         } catch (Exception exception) {
             exception.printStackTrace();
             System.out.println("Error");

@@ -4,11 +4,11 @@ import java.util.Objects;
 
 public class Smartphone implements Cloneable {
 
-    public String brandName;
-    public String modelName;
-    public int batterymAh;
-    public SmartphonePrice producerPrice;
-    public SmartphonePrice retailPrice;
+    private String brandName;
+    private String modelName;
+    private int batterymAh;
+    private SmartphonePrice producerPrice;
+    private SmartphonePrice retailPrice;
 
     @Override
     public String toString() {

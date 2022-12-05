@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class SmartphonePrice implements Cloneable{
 
-    public String priceType;
-    public double priceInEuros;
+    private String priceType;
+    private double priceInEuros;
 
     @Override
     public Smartphone clone() throws CloneNotSupportedException{
