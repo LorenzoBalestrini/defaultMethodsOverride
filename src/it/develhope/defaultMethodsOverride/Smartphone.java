@@ -36,13 +36,13 @@ public class Smartphone implements Cloneable {
 
     @Override
     public Smartphone clone() throws CloneNotSupportedException {
-        Smartphone clonedSmartphone = (Smartphone)super.clone();
-        clonedSmartphone.producerPrice = this.producerPrice;
-        clonedSmartphone.retailPrice = this.retailPrice;
+        Smartphone clonedSmartphone = (Smartphone) super.clone();
+        clonedSmartphone.producerPrice = this.producerPrice.clone();
+        clonedSmartphone.retailPrice = this.retailPrice.clone();
         return clonedSmartphone;
     }
 
-    public  Smartphone (String brand, String model, int battery, SmartphonePrice prodP, SmartphonePrice retailP){
+    public Smartphone(String brand, String model, int battery, SmartphonePrice prodP, SmartphonePrice retailP) {
         this.brandName = brand;
         this.modelName = model;
         this.batterymAh = battery;

@@ -8,9 +8,9 @@ public class SmartphonePrice implements Cloneable{
     private double priceInEuros;
 
     @Override
-    public Smartphone clone() throws CloneNotSupportedException{
-        Smartphone clonedSmartphone = (Smartphone) super.clone();
-        return clonedSmartphone.clone();
+    public SmartphonePrice clone() throws CloneNotSupportedException{
+        SmartphonePrice clonedSmartphonePrice = (SmartphonePrice) super.clone();
+        return clonedSmartphonePrice.clone();
     }
 
     @Override
